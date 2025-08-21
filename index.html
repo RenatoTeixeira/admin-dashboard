@@ -12,7 +12,7 @@
   <body>
     <div class="container">
       <div class="sidebar">
-        <div class="logo">DashBoard</div>
+        <div class="logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>view-dashboard</title><path d="M13,3V9H21V3M13,21H21V11H13M3,21H11V15H3M3,13H11V3H3V13Z" /></svg>DashBoard</div>
         <div class="menu">
           <a href="/home">Home</a>
           <a href="/profile">Profile</a>
@@ -28,11 +28,13 @@
         </div>
       </div>
       <div class="header">
-        <div class="search"><input type="search" id="search" /></div>
-        <div class="identity">
-          <div class="notification"></div>
-          <div class="icon"></div>
-          <div class="name">Billy Joe</div>
+        <div class="search"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>card-search</title><path d="M11.5 9C10.12 9 9 10.12 9 11.5S10.12 14 11.5 14 14 12.88 14 11.5 12.88 9 11.5 9M20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4M16.79 18.21L13.88 15.3C13.19 15.74 12.37 16 11.5 16C9 16 7 14 7 11.5S9 7 11.5 7 16 9 16 11.5C16 12.38 15.74 13.19 15.3 13.89L18.21 16.79L16.79 18.21Z" /></svg><input type="search" id="search" /></div>
+        <div class="logged">
+          <div class="notification"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>bell-alert-outline</title><path d="M12 2A2 2 0 0 0 10 4A2 2 0 0 0 10 4.29C7.12 5.14 5 7.82 5 11V17L3 19V20H21V19L19 17V11C19 7.82 16.88 5.14 14 4.29A2 2 0 0 0 14 4A2 2 0 0 0 12 2M12 6A5 5 0 0 1 17 11V18H7V11A5 5 0 0 1 12 6M21 7V13H23V7H21M21 15V17H23V15H21M10 21A2 2 0 0 0 12 23A2 2 0 0 0 14 21H10Z" /></svg></div>
+          <div class="profile">
+            <div class="icon"><img src="img/profile1.png" alt="profile image"></div>
+            <div class="name">Billy Joe</div>
+          </div>
         </div>
         <div class="greeting">
           <div class="icon"></div>
@@ -45,6 +47,7 @@
         </div>
       </div>
       <div class="maincontent">
+          <div class="projects-header"><h1>Projects</h1></div>
         <div class="projects">
           <div class="project">
             <h2>Amazing AI app</h2>
@@ -52,9 +55,20 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit. quam
               ipsum!
             </p>
-            <img src="" alt="favorite" />
-            <img src="" alt="watch" />
-            <img src="" alt="share" />
+            <div class="icons">
+              <a href="" class="icon1">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="transform">
+                  <title>heart-outline</title>
+                  <path
+                    d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z"
+                  />
+              </a>
+              <a href="" class="icon2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="transform"><title>eye-arrow-left-outline</title><path d="M12 4.5C7 4.5 2.73 7.61 1 12C2.73 16.39 7 19.5 12 19.5C12.36 19.5 12.72 19.5 13.08 19.45C13.03 19.13 13 18.82 13 18.5C13 18.14 13.04 17.78 13.1 17.42C12.74 17.46 12.37 17.5 12 17.5C8.24 17.5 4.83 15.36 3.18 12C4.83 8.64 8.24 6.5 12 6.5S19.17 8.64 20.82 12C20.7 12.24 20.56 12.45 20.43 12.68C21.09 12.84 21.72 13.11 22.29 13.5C22.56 13 22.8 12.5 23 12C21.27 7.61 17 4.5 12 4.5M12 9C10.34 9 9 10.34 9 12S10.34 15 12 15 15 13.66 15 12 13.66 9 12 9M18 15V17H22V19H18V21L15 18L18 15" /></svg>
+              </a>
+              <a href="" class="icon3">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="transform"><title>share-variant</title><path d="M18,16.08C17.24,16.08 16.56,16.38 16.04,16.85L8.91,12.7C8.96,12.47 9,12.24 9,12C9,11.76 8.96,11.53 8.91,11.3L15.96,7.19C16.5,7.69 17.21,8 18,8A3,3 0 0,0 21,5A3,3 0 0,0 18,2A3,3 0 0,0 15,5C15,5.24 15.04,5.47 15.09,5.7L8.04,9.81C7.5,9.31 6.79,9 6,9A3,3 0 0,0 3,12A3,3 0 0,0 6,15C6.79,15 7.5,14.69 8.04,14.19L15.16,18.34C15.11,18.55 15.08,18.77 15.08,19C15.08,20.61 16.39,21.91 18,21.91C19.61,21.91 20.92,20.61 20.92,19A2.92,2.92 0 0,0 18,16.08Z" /></svg>
+              </a>
+            </div>
           </div>
           <div class="project">
             <h2>Note Taking Project</h2>
@@ -62,9 +76,20 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit. quam
               ipsum!
             </p>
-            <img src="" alt="favorite" />
-            <img src="" alt="watch" />
-            <img src="" alt="share" />
+            <div class="icons">
+              <a href="" class="icon1">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="transform">
+                  <title>heart-outline</title>
+                  <path
+                    d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z"
+                  />
+              </a>
+              <a href="" class="icon2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="transform"><title>eye-arrow-left-outline</title><path d="M12 4.5C7 4.5 2.73 7.61 1 12C2.73 16.39 7 19.5 12 19.5C12.36 19.5 12.72 19.5 13.08 19.45C13.03 19.13 13 18.82 13 18.5C13 18.14 13.04 17.78 13.1 17.42C12.74 17.46 12.37 17.5 12 17.5C8.24 17.5 4.83 15.36 3.18 12C4.83 8.64 8.24 6.5 12 6.5S19.17 8.64 20.82 12C20.7 12.24 20.56 12.45 20.43 12.68C21.09 12.84 21.72 13.11 22.29 13.5C22.56 13 22.8 12.5 23 12C21.27 7.61 17 4.5 12 4.5M12 9C10.34 9 9 10.34 9 12S10.34 15 12 15 15 13.66 15 12 13.66 9 12 9M18 15V17H22V19H18V21L15 18L18 15" /></svg>
+              </a>
+              <a href="" class="icon3">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="transform"><title>share-variant</title><path d="M18,16.08C17.24,16.08 16.56,16.38 16.04,16.85L8.91,12.7C8.96,12.47 9,12.24 9,12C9,11.76 8.96,11.53 8.91,11.3L15.96,7.19C16.5,7.69 17.21,8 18,8A3,3 0 0,0 21,5A3,3 0 0,0 18,2A3,3 0 0,0 15,5C15,5.24 15.04,5.47 15.09,5.7L8.04,9.81C7.5,9.31 6.79,9 6,9A3,3 0 0,0 3,12A3,3 0 0,0 6,15C6.79,15 7.5,14.69 8.04,14.19L15.16,18.34C15.11,18.55 15.08,18.77 15.08,19C15.08,20.61 16.39,21.91 18,21.91C19.61,21.91 20.92,20.61 20.92,19A2.92,2.92 0 0,0 18,16.08Z" /></svg>
+              </a>
+            </div>
           </div>
 
           <div class="project">
@@ -73,9 +98,20 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit. quam
               ipsum!
             </p>
-            <img src="" alt="favorite" />
-            <img src="" alt="watch" />
-            <img src="" alt="share" />
+            <div class="icons">
+              <a href="" class="icon1">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="transform">
+                  <title>heart-outline</title>
+                  <path
+                    d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z"
+                  />
+              </a>
+              <a href="" class="icon2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="transform"><title>eye-arrow-left-outline</title><path d="M12 4.5C7 4.5 2.73 7.61 1 12C2.73 16.39 7 19.5 12 19.5C12.36 19.5 12.72 19.5 13.08 19.45C13.03 19.13 13 18.82 13 18.5C13 18.14 13.04 17.78 13.1 17.42C12.74 17.46 12.37 17.5 12 17.5C8.24 17.5 4.83 15.36 3.18 12C4.83 8.64 8.24 6.5 12 6.5S19.17 8.64 20.82 12C20.7 12.24 20.56 12.45 20.43 12.68C21.09 12.84 21.72 13.11 22.29 13.5C22.56 13 22.8 12.5 23 12C21.27 7.61 17 4.5 12 4.5M12 9C10.34 9 9 10.34 9 12S10.34 15 12 15 15 13.66 15 12 13.66 9 12 9M18 15V17H22V19H18V21L15 18L18 15" /></svg>
+              </a>
+              <a href="" class="icon3">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="transform"><title>share-variant</title><path d="M18,16.08C17.24,16.08 16.56,16.38 16.04,16.85L8.91,12.7C8.96,12.47 9,12.24 9,12C9,11.76 8.96,11.53 8.91,11.3L15.96,7.19C16.5,7.69 17.21,8 18,8A3,3 0 0,0 21,5A3,3 0 0,0 18,2A3,3 0 0,0 15,5C15,5.24 15.04,5.47 15.09,5.7L8.04,9.81C7.5,9.31 6.79,9 6,9A3,3 0 0,0 3,12A3,3 0 0,0 6,15C6.79,15 7.5,14.69 8.04,14.19L15.16,18.34C15.11,18.55 15.08,18.77 15.08,19C15.08,20.61 16.39,21.91 18,21.91C19.61,21.91 20.92,20.61 20.92,19A2.92,2.92 0 0,0 18,16.08Z" /></svg>
+              </a>
+            </div>
           </div>
 
           <div class="project">
@@ -84,9 +120,20 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit. quam
               ipsum!
             </p>
-            <img src="" alt="favorite" />
-            <img src="" alt="watch" />
-            <img src="" alt="share" />
+            <div class="icons">
+              <a href="" class="icon1">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="transform">
+                  <title>heart-outline</title>
+                  <path
+                    d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z"
+                  />
+              </a>
+              <a href="" class="icon2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="transform"><title>eye-arrow-left-outline</title><path d="M12 4.5C7 4.5 2.73 7.61 1 12C2.73 16.39 7 19.5 12 19.5C12.36 19.5 12.72 19.5 13.08 19.45C13.03 19.13 13 18.82 13 18.5C13 18.14 13.04 17.78 13.1 17.42C12.74 17.46 12.37 17.5 12 17.5C8.24 17.5 4.83 15.36 3.18 12C4.83 8.64 8.24 6.5 12 6.5S19.17 8.64 20.82 12C20.7 12.24 20.56 12.45 20.43 12.68C21.09 12.84 21.72 13.11 22.29 13.5C22.56 13 22.8 12.5 23 12C21.27 7.61 17 4.5 12 4.5M12 9C10.34 9 9 10.34 9 12S10.34 15 12 15 15 13.66 15 12 13.66 9 12 9M18 15V17H22V19H18V21L15 18L18 15" /></svg>
+              </a>
+              <a href="" class="icon3">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="transform"><title>share-variant</title><path d="M18,16.08C17.24,16.08 16.56,16.38 16.04,16.85L8.91,12.7C8.96,12.47 9,12.24 9,12C9,11.76 8.96,11.53 8.91,11.3L15.96,7.19C16.5,7.69 17.21,8 18,8A3,3 0 0,0 21,5A3,3 0 0,0 18,2A3,3 0 0,0 15,5C15,5.24 15.04,5.47 15.09,5.7L8.04,9.81C7.5,9.31 6.79,9 6,9A3,3 0 0,0 3,12A3,3 0 0,0 6,15C6.79,15 7.5,14.69 8.04,14.19L15.16,18.34C15.11,18.55 15.08,18.77 15.08,19C15.08,20.61 16.39,21.91 18,21.91C19.61,21.91 20.92,20.61 20.92,19A2.92,2.92 0 0,0 18,16.08Z" /></svg>
+              </a>
+            </div>
           </div>
           <div class="project">
             <h2>Shopping list App</h2>
@@ -94,9 +141,20 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit. quam
               ipsum!
             </p>
-            <img src="" alt="favorite" />
-            <img src="" alt="watch" />
-            <img src="" alt="share" />
+            <div class="icons">
+              <a href="" class="icon1">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="transform">
+                  <title>heart-outline</title>
+                  <path
+                    d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z"
+                  />
+              </a>
+              <a href="" class="icon2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="transform"><title>eye-arrow-left-outline</title><path d="M12 4.5C7 4.5 2.73 7.61 1 12C2.73 16.39 7 19.5 12 19.5C12.36 19.5 12.72 19.5 13.08 19.45C13.03 19.13 13 18.82 13 18.5C13 18.14 13.04 17.78 13.1 17.42C12.74 17.46 12.37 17.5 12 17.5C8.24 17.5 4.83 15.36 3.18 12C4.83 8.64 8.24 6.5 12 6.5S19.17 8.64 20.82 12C20.7 12.24 20.56 12.45 20.43 12.68C21.09 12.84 21.72 13.11 22.29 13.5C22.56 13 22.8 12.5 23 12C21.27 7.61 17 4.5 12 4.5M12 9C10.34 9 9 10.34 9 12S10.34 15 12 15 15 13.66 15 12 13.66 9 12 9M18 15V17H22V19H18V21L15 18L18 15" /></svg>
+              </a>
+              <a href="" class="icon3">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="transform"><title>share-variant</title><path d="M18,16.08C17.24,16.08 16.56,16.38 16.04,16.85L8.91,12.7C8.96,12.47 9,12.24 9,12C9,11.76 8.96,11.53 8.91,11.3L15.96,7.19C16.5,7.69 17.21,8 18,8A3,3 0 0,0 21,5A3,3 0 0,0 18,2A3,3 0 0,0 15,5C15,5.24 15.04,5.47 15.09,5.7L8.04,9.81C7.5,9.31 6.79,9 6,9A3,3 0 0,0 3,12A3,3 0 0,0 6,15C6.79,15 7.5,14.69 8.04,14.19L15.16,18.34C15.11,18.55 15.08,18.77 15.08,19C15.08,20.61 16.39,21.91 18,21.91C19.61,21.91 20.92,20.61 20.92,19A2.92,2.92 0 0,0 18,16.08Z" /></svg>
+              </a>
+            </div>
           </div>
           <div class="project">
             <h2>Portfolio Project</h2>
@@ -104,11 +162,23 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit. quam
               ipsum!
             </p>
-            <img src="" alt="favorite" />
-            <img src="" alt="watch" />
-            <img src="" alt="share" />
+            <div class="icons">
+              <a href="" class="icon1">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="transform">
+                  <title>heart-outline</title>
+                  <path
+                    d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z"
+                  />
+              </a>
+              <a href="" class="icon2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="transform"><title>eye-arrow-left-outline</title><path d="M12 4.5C7 4.5 2.73 7.61 1 12C2.73 16.39 7 19.5 12 19.5C12.36 19.5 12.72 19.5 13.08 19.45C13.03 19.13 13 18.82 13 18.5C13 18.14 13.04 17.78 13.1 17.42C12.74 17.46 12.37 17.5 12 17.5C8.24 17.5 4.83 15.36 3.18 12C4.83 8.64 8.24 6.5 12 6.5S19.17 8.64 20.82 12C20.7 12.24 20.56 12.45 20.43 12.68C21.09 12.84 21.72 13.11 22.29 13.5C22.56 13 22.8 12.5 23 12C21.27 7.61 17 4.5 12 4.5M12 9C10.34 9 9 10.34 9 12S10.34 15 12 15 15 13.66 15 12 13.66 9 12 9M18 15V17H22V19H18V21L15 18L18 15" /></svg>
+              </a>
+              <a href="" class="icon3">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="transform"><title>share-variant</title><path d="M18,16.08C17.24,16.08 16.56,16.38 16.04,16.85L8.91,12.7C8.96,12.47 9,12.24 9,12C9,11.76 8.96,11.53 8.91,11.3L15.96,7.19C16.5,7.69 17.21,8 18,8A3,3 0 0,0 21,5A3,3 0 0,0 18,2A3,3 0 0,0 15,5C15,5.24 15.04,5.47 15.09,5.7L8.04,9.81C7.5,9.31 6.79,9 6,9A3,3 0 0,0 3,12A3,3 0 0,0 6,15C6.79,15 7.5,14.69 8.04,14.19L15.16,18.34C15.11,18.55 15.08,18.77 15.08,19C15.08,20.61 16.39,21.91 18,21.91C19.61,21.91 20.92,20.61 20.92,19A2.92,2.92 0 0,0 18,16.08Z" /></svg>
+              </a>
+            </div>
           </div>
         </div>
+        <div class="announcements-header"><h1>Announcements</h1></div>
         <div class="announcements">
           <div class="announcement">
             <h2>App maintenance</h2>
@@ -123,6 +193,7 @@
             <p>Lorem, ipsum dolor.</p>
           </div>
         </div>
+        <div class="trending-header"><h1>Trending</h1></div>
         <div class="trending">
           <div class="randomId">
             <img src="" alt="" />
